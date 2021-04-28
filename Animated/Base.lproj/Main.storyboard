@@ -24,7 +24,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                         <real key="value" value="2"/>
@@ -42,6 +41,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNY-9N-Psv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +58,9 @@
                             <constraint firstItem="R9b-54-6Er" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="pby-j7-65V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="springAnimationView" destination="R9b-54-6Er" id="ayD-za-5cZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
