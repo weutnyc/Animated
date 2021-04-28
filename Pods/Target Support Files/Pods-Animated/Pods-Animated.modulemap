@@ -1,0 +1,6 @@
+framework module Pods_Animated {
+  umbrella header "Pods-Animated-umbrella.h"
+
+  export *
+  module * { export * }
+}
